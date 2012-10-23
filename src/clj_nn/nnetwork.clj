@@ -86,7 +86,6 @@
   [x y theta1 theta2 alpha lambda steps]
   (let [m (rowc x)
         x-ones (add-ones x)]
-    ;(println (cost h y m theta1 theta2 lambda))
     (loop [theta1 theta1
            theta2 theta2
            steps steps]

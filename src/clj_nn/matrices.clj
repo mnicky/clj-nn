@@ -174,8 +174,9 @@
   {:post [(= (rowc %) (colc m)) (= (colc %) (rowc m))]}
   (cols m 0 (dec (colc m))))
 
-;(defn inv [matrix]
+;(defn inv
 ;  "Returns inverted matrix."
+;  [m]
 ;)
 
 (defn prod
@@ -221,7 +222,7 @@
   ([f m] (reduce f (apply concat m)))
   ([f val m] (reduce f val (apply concat m))))
 
-;=== FOLD OPERATIONS ===================================================
+;=== SUM OPERATIONS ===================================================
 
 (defn rowsum
   "Returns vector of sums for every row of matrix."
